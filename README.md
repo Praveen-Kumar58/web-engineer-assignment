@@ -1,2 +1,2 @@
 # web-engineer-assignment
-"Screening task submission for Web Engineer Trainee"
+Screening task submission for Web Engineer Trainee
