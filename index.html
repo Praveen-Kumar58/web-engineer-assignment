@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding :0px;
+        }
+        body{
+            background-color: rgb(235, 238, 238);
+        }
+        nav{
+            background-color: aliceblue;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+            padding :10px 20px;
+        }
+        .nav-left,.nav-right{
+            display: flex;
+            flex-wrap:wrap;
+            align-items: center;
+            gap:10px;
+        }
+        .navbar{
+            text-decoration: none;
+            color:black;
+            margin-right:10px;
+        }
+        .btn{
+            height: 30px;
+            width:70px;
+            border:none;
+            cursor:pointer;
+        }
+        #btn1{
+            background-color: azure;
+            border-radius: 10px;
+        }
+        #btn2{
+            background-color:rgb(142, 76, 203);
+            border-radius: 10px;
+        }
+        .second{
+            margin-top: 4px;
+            padding: 40px 20px;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        .second h2{
+            margin:10px 0px;
+        }
+        /* third */
+        .third{
+            display:flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin:40px 20px;
+            gap:40px;
+        }
+        .img-part img{
+            width:100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .third-part{
+            max-width: 500px;
+        }
+        .third-part h1{
+            margin:5px 0px;
+        }
+        .inner{
+            display:flex;
+            flex-wrap: wrap;
+            gap:40px;
+            margin-top: 30px;
+        }
+        .right-inner,left-inner{
+            flex:1;
+        }
+        /* fourth */
+        .four{
+            display: flex;
+            gap:40px;
+            margin-top: 30px;
+            padding: 40px;
+            justify-content: center;
+        }
+        .box{
+            width:calc(25% -20px);
+            height:120px;
+            background-color: antiquewhite;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:rgb(211, 195, 195);
+            font-size:20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        @media(max-width:480px) {
+            .box{
+                width:100%
+            }
+            .nav-left,.nav-right{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav-left">
+            <a class="navbar" href="">Untitled UI</a>
+            <a  class="navbar"href="">Home</a>
+            <a  class="navbar"href="">Products</a>
+            <a  class="navbar"href="">Resources</a>
+            <a  class="navbar"href="">Pricing</a>
+        </div>
+        <div class="nav-right">
+            <button class="btn" id="btn1">Login</button>
+            <button class="btn" id="btn2">Sign up</button>
+
+        </div>
+    </nav>
+    <!-- second -->
+     <div class="second">
+        <h6><a href="" style="text-decoration: none;">About us</a></h6>
+        <h2>About the company</h2>
+        <p>Learn more about the company and the team behind it.</p>
+     </div>
+     <!-- third  -->
+      <div class="third">
+        <div class="img-part">
+            <img src="https://th.bing.com/th/id/OIP.FJFC-pi6zuu7Tkrbz6x0OwHaFj?pid=ImgDetMain" alt="img not found">
+        </div>
+        <div class="content">
+            <div class="third-part">
+                <p>we've helped hundreds of companies</p>
+                <h1>we're only just getting</h1>
+                <h1>Started on our journey</h1>
+            </div>
+            <div class="inner">
+                <div class="right-inner">
+                    <h1 style="color:violet;">400+</h1>
+                    <p>Projects Completed</p>
+                    <h1 style="color:violet;">10k</h1>
+                    <p>Global Downloads</p>
+                </div>
+                <div class="left-inner">
+                    <h1 style="color:violet;">600%</h1><p>Return on investments</p>
+                    <h1 style="color:violet;">200+</h1><p>5-star reviews</p>
+                </div>
+            </div>
+      </div>
+    </div>
+    <!-- fourth -->
+     <div class="four">
+        <div class="box">Profile 1</div>
+        <div class="box">Profile 2</div>
+        <div class="box">Profile 3</div>
+        <div class="box">Profile 4</div>
+        <div class="box">Profile 5</div>
+        <div class="box">Profile 6</div>
+        <div class="box">Profile 7</div>
+        <div class="box">Profile 8</div>
+     </div>
+</body>
+</html>
